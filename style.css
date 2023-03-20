@@ -1,0 +1,324 @@
+p{
+    font-size: 700;
+    color: cornflowerblue;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    padding: 40px 0x;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: wheat;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+ }
+ #header h1{
+    color: black ;
+ }
+ #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ #navbar li {
+    list-style: none;
+    padding:0 20px;
+    position: relative;
+ }
+ #navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color:brown;
+    transition: 0.3s ease;
+ }
+ #navbar li a:hover,
+ #navbar li a.active{
+    color: aqua;
+ }
+ 
+ #navbar li a.active::after,
+ #navbar li a:hover::after{
+    content: "";
+    width:30%;
+    height: 3px;
+    background: brown;
+    position:absolute;
+    bottom: -4px;
+    left:20px;
+ }
+
+ /*home page*/
+ #hero{
+    background-image: url("bac.jpg");
+    height:90vh;
+    width:100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+ }
+
+ #hero h4{
+    padding-bottom: 15px;
+
+ }
+ #hero h1{
+    color: whitesmoke;
+
+ }
+ #product1 {
+    text-align: center;
+ }
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+#product1 .pro{
+    width:23%;
+min-width: 250px; 
+padding: 10px 20px;
+border:1px solid burlywood;
+border-radius: 20px; 
+cursor:pointer;
+box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+margin:15px 0;
+transition: 0.2s ease;
+position: relative;
+
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .des span{
+    color: dimgrey;
+    font-size: 12px;
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    color: black;
+    font-size:16px ;
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    font-weight: 700;
+    font-size: 16px;
+    color: blue;
+}
+#product1 .pro .cart{
+    
+    line-height: 18px;
+    border-radius: 10px;
+    background-color: 50px;
+    background-color: rgb(161, 121, 205);
+    font-weight: 500;
+    color: rgb(5, 11, 8);
+    position: absolute;
+    bottom:55px;
+    right:30px;
+}
+#product1 .pro .cart2{
+    
+    line-height: 18px;
+    border-radius: 10px;
+    background-color: 50px;
+    background-color: rgb(133, 114, 237);
+    font-weight: 500;
+    color: rgb(5, 11, 8);
+    position: absolute;
+    bottom:25px;
+    right:10px;
+}
+#product1 .pro .cart2:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    color:black;
+    background-color:chocolate;
+}
+#product1 .pro .cart:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    color:black;
+    background-color:chocolate;
+}
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(backg.jpg);
+    width:100%;
+    height: 20vh;
+    background-position: center;
+}
+#banner h4{
+    font-size: 23px;
+    color: blue;
+}
+
+#banner h1{
+    font-size: 30px;
+    color: blue;
+}
+#banner h1 span{
+    font-size: 40px;
+    color: green;
+}
+#banner button{
+    font-size: 30px;
+    color: blue;
+    background-color: white;
+    font-style: italic;
+}
+#banner button:hover{
+    background-color: green;
+}
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    background-image: url(background.jpg);
+    min-width:580px;
+    height: 50vh;
+    background-size:cover;
+    background-position: center;
+    padding:30px;
+}
+#sm-banner .banner-box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    background-image: url(background2.jpg);
+    min-width:580px;
+    height: 50vh;
+    background-size:cover;
+    background-position: center;
+    padding:30px;
+}
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#sm-banner h4{
+    font-size: 30px;
+    color: aliceblue;
+}
+#sm-banner h2{
+    font-size: 35px;
+    color: aliceblue;
+}
+#sm-banner span{
+    font-size: 30px;
+    color: aliceblue;
+}
+#sm-banner button{
+    font-size: 30px;
+    background-color: blanchedalmond;
+}
+#sm-banner button:hover{
+    
+    background-color: aqua;
+}
+#newsletter{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    background-color:darkkhaki;
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+}
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color:white ;
+}
+#newsletter p{
+    font-size: 14px;
+    font-weight:600;
+    color:azure ;
+}
+#newsletter p span{
+    font-size: 14px;
+    font-weight:600;
+    color:brown;
+}
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25cm;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#newsletter button{
+    background-color: aqua;
+    color: antiquewhite;
+    white-space:nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    color: black;
+}
+footer .col.p{
+    color: black;
+}
+footer a{
+font-size: 13px;
+text-decoration: none;
+color: black;
+margin-bottom: 10px;
+}
